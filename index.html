@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+     <!-- Navegação Desktop -->
+    <nav id="navegacao-desktop">
+      <div class="logo">Athilas Araujo</div>
+      <div>
+        <ul class="links-nav">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navegação Hamburger -->
+    <nav id="navegacao-hamburger">
+      <div class="logo">Athilas Araujo</div>
+      <div class="menu-hamburger">
+        <div class="icone-hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="links-menu">
+          <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experiencia" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seção de Perfil -->
+    <section id="perfil">
+      <div class="container-foto">
+        <img src="./assets/foto-perfil.png" alt="Foto de perfil de John Doe" />
+      </div>
+      <div class="texto-secao">
+        <p class="texto-secao__p1">Olá, eu sou</p>
+        <h1 class="titulo">Athilas Araujo</h1>
+        <p class="texto-secao__p2">Analista de Data Quality</p>
+        <div class="container-botoes">
+          <button
+            class="botao botao-cor-2"
+            onclick="window.open('./assets/cv-athilas.pdf')"
+          >
+            Baixar CV
+          </button>
+          <button class="botao botao-cor-1" onclick="location.href='./#contato'">
+            Contato
+          </button>
+        </div>
+        <div id="container-redes-sociais">
+          <img
+            src="./assets/linkedin.png"
+            alt="Meu perfil no LinkedIn"
+            class="icone"
+            onclick="location.href='https://www.linkedin.com/in/athilasaraujo'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Meu perfil no Github"
+            class="icone"
+            onclick="location.href='https://github.com/athilasaraujo'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+      <p class="texto-secao__p1">Saiba Mais</p>
+      <h1 class="titulo">Sobre Mim</h1>
+      <div class="container-secao">
+        <div class="container-foto">
+          <img
+            src="./assets/sobre.png"
+            alt="Foto de perfil"
+            class="foto-sobre"
+          />
+        </div>
+        <div class="container-detalhes-sobre">
+          <div class="containers-sobre">
+            <div class="container-detalhes">
+              <img
+                src="./assets/experience.png"
+                alt="Ícone de Experiência"
+                class="icone"
+              />
+              <h3>Experiência</h3>
+              <p>1+ ano <br />Análise de Dados</p>
+            </div>
+            <div class="container-detalhes">
+              <img
+                src="./assets/education.png"
+                alt="Ícone de Educação"
+                class="icone"
+              />
+              <h3>Educação</h3>
+              <p>Tecnólogo<br />Graduando</p>
+            </div>
+          </div>
+          <div class="container-texto">
+            <p>
+              Me chamo Athilas, tenho 21 anos e sou de Recife. Cursei Hotelaria no IFAL 
+              e agora estou mergulhado em Engenharia de Software na Uninter. Na Neogrid, 
+              desempenho o papel de analista de Data Quality, onde posso explorar minha 
+              paixão pela tecnologia com meu fascínio pelos dados.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícone de Seta"
+        class="icone seta"
+        onclick="location.href='#experiencia'"
+      />
+    </section>
+
+    <!-- Seção de Experiência -->
+    <section id="experiencia">
+      <p class="texto-secao__p1">Explore Minha</p>
+      <h1 class="titulo">Experiência</h1>
+      <div class="container-detalhes-experiencia">
+        <div class="containers-sobre">
+          <div class="container-detalhes">
+            <h2 class="subtitulo-experiencia">Dados</h2>
+            <div class="container-artigos">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>Pacot. Office</h3>
+                  <p>Experiente  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>MS Power BI</h3>
+                  <p>Experiente  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>Looker Std.</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>Azure</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="container-detalhes">
+            <h2 class="subtitulo-experiencia">Outras Experiências</h2>
+            <div class="container-artigos">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermadiário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>Prototipagem</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icone"
+                />
+                <div>
+                  <h3>Office</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícone de Seta"
+        class="icone seta"
+        onclick="location.href='#projetos'"
+      />
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos">
+      <p class="texto-secao__p1">Navegue Pelos Meus</p>
+      <h1 class="titulo">Projetos</h1>
+      <div class="container-detalhes-experiencia">
+        <div class="containers-sobre">
+          <div class="container-detalhes container-cor">
+            <div class="container-artigos">
+              <img
+                src="./assets/projeto-1.png"
+                alt="Irrigação em Arduino"
+                class="imagem-projeto"
+              />
+            </div>
+            <h2 class="subtitulo-experiencia titulo-projeto">Irrigação em Arduino</h2>
+            <div class="container-botoes">
+              <button
+                class="botao botao-cor-2 botao-projeto"
+                onclick="location.href='https://github.com/athilasaraujo/IrrigacaoArduino'"
+              >
+                Github
+              </button>
+              <button
+                class="botao botao-cor-2 botao-projeto"
+                onclick="location.href='#contato'"
+              >
+                Saiba mais
+              </button>
+            </div>
+          </div>
+          <div class="container-detalhes container-cor">
+            <div class="container-artigos">
+              <img
+                src="./assets/projeto-2.png"
+                alt="Estação Meteorolgica"
+                class="imagem-projeto"
+              />
+            </div>
+            <h2 class="subtitulo-experiencia titulo-projeto">Estação Meteorolgica</h2>
+            <div class="container-botoes">
+              <button
+                class="botao botao-cor-2 botao-projeto"
+                onclick="location.href='https://github.com/athilasaraujo/EstacaoMeteorologica'"
+              >
+                Github
+              </button>
+              <button
+                class="botao botao-cor-2 botao-projeto"
+                onclick="location.href='#contato'"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+          <div class="container-detalhes container-cor">
+            <div class="container-artigos">
+              <img
+                src="./assets/projeto-3.png"
+                alt="PetHero"
+                class="imagem-projeto"
+              />
+            </div>
+            <h2 class="subtitulo-experiencia titulo-projeto">PetHero</h2>
+            <div class="container-botoes">
+              <button
+                class="botao botao-cor-2 botao-projeto"
+                onclick="location.href='https://www.figma.com/proto/utnvBH6R9OragxrlxQMt1p/PetHero?page-id=0%3A1&node-id=1-107&viewport=372%2C312%2C0.16&t=3MnI7iw8HBbu34oP-1&scaling=scale-down&starting-point-node-id=1%3A107'"
+              >
+                Protótipo
+              </button>
+              <button
+                class="botao botao-cor-2 botao-projeto"
+                onclick="location.href='#contato'"
+              >
+                Saiba mais
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícone de Seta"
+        class="icone seta"
+        onclick="location.href='#contato'"
+      />
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+      <p class="texto-secao__p1">Entre em Contato</p>
+      <h1 class="titulo">Contato</h1>
+      <div class="container-info-contato-superior">
+        <div class="container-info-contato">
+          <!-- Informações de contato -->
+          <img
+            src="./assets/email.png"
+            alt="Ícone de Email"
+            class="icone icone-contato icone-email"
+          />
+          <p><a href="mailto:athilasaraujo@gmail.com">Gmail</a></p>
+        </div>
+        <div class="container-info-contato">
+          <img
+            src="./assets/linkedin.png"
+            alt="Ícone de LinkedIn"
+            class="icone icone-contato"
+          />
+          <p><a href="https://www.linkedin.com/in/athilasaraujo">LinkedIn</a></p>
+        </div>
+      </div>
+    
+      <!-- Formulário de Contato -->
+      <form action="#" method="post" class="formulario-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="numero">Número:</label>
+        <input type="tel" id="numero" name="numero" required>
+    
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+        <button type="submit" class="botao botao-cor-1">Enviar</button>
+      </form>
+    </section> 
+
+     <!-- Rodapé -->   
+    <footer>
+      <nav>
+        <div class="container-links-nav">
+          <ul class="links-nav">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Make with ♡ and <>. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
